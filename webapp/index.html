@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>装置ユーザ割り当て表</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="grid"></div>
+  <button id="registerBtn">登録</button>
+
+  <!-- モーダル -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <label>テンプレート:
+        <select id="templateSelect"></select>
+      </label>
+      <label>コメント:
+        <input type="text" id="commentInput" maxlength="30">
+      </label>
+      <button id="saveLabelBtn">保存</button>
+      <button id="closeModalBtn">閉じる</button>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+#grid {
+  display: grid;
+  grid-template-columns: repeat(5, 120px);
+  grid-auto-rows: 80px;
+  gap: 8px;
+  margin: 20px;
+}
+.cell {
+  border: 1px solid #aaa;
+  background: #f9f9f9;
+  position: relative;
+  min-width: 100px;
+  min-height: 60px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.label {
+  position: absolute;
+  min-width: 40px;
+  min-height: 24px;
+  padding: 2px 6px;
+  cursor: move;
+  box-sizing: border-box;
+  user-select: none;
+  resize: both;
+  overflow: auto;
+}
+.modal {
+  display: none; position: fixed; z-index: 10; left: 0; top: 0; width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.3); justify-content: center; align-items: center;
+}
+.modal-content {
+  background: #fff; padding: 20px; border-radius: 8px; min-width: 300px;
+}
+.modal.show { display: flex; }
+#registerBtn { margin: 20px; padding: 10px 30px; font-size: 1.1em; }
